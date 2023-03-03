@@ -32,12 +32,12 @@ public class Exercise67_AddBinary_LeetCode {
      };
      public static String toBinary(int b){//Convert decimal sum to binary
          double quotient = b;
-         String cociente = "";
+         String residue = "";
          while(quotient >= 1){
-             cociente +=  (int)(quotient % 2);
+             residue +=  (int)(quotient % 2);
              quotient = (int)(quotient/2);
          }
-         return reverse(cociente);
+         return reverse(residue);
      };
      public static String reverse(String result){//returns the value of the String in the correct order
          char[] resultChar = result.toCharArray();
