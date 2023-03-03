@@ -6,14 +6,8 @@ package com.mycompany.exercise67_addbinary_leetcode;
 public class Exercise67_AddBinary_LeetCode {
 
     public static void main(String[] args) {
-         String cociente = "";
-         double div = 5;
-         
-         for (int i = 0; div >= 1; i++) {
-             div = Math.floor(div/2);
-             cociente += div % 2; 
-         }
-        System.out.println(div);
+        
+        System.out.println(toBinary(8));
     };
      public static String addBinary(String a, String b) {
      
@@ -35,15 +29,21 @@ public class Exercise67_AddBinary_LeetCode {
       return decimalNumber;  
      };
      public static String toBinary(int b){
-         String cociente = "";
          double div = b;
-         
+         String cociente = "";
          while(div >= 1){
-             
-             div = Math.floor(div/2)
+             cociente +=  (int)(div%2);
+             div = (int)(div/2);
          }
-         
-         return " ";
+         return reverse(cociente);
+     };
+     public static String reverse(String result){
+         char[] resultChar = result.toCharArray();
+         result = "";
+         for (int i = resultChar.length - 1; i >= 0; i--) {
+             result += resultChar[i];
+         }
+         return result;
      };
     
 };
