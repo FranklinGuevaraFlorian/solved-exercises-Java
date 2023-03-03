@@ -7,7 +7,7 @@ public class Exercise67_AddBinary_LeetCode {
 
     public static void main(String[] args) {
         
-        System.out.println(toBinary(8));
+        System.out.println(addBinary("101","11"));
     };
      public static String addBinary(String a, String b) {
      
@@ -15,8 +15,8 @@ public class Exercise67_AddBinary_LeetCode {
          int bInteger = toDecimal(b);
          
          int decimalSum = aInteger + bInteger;
-         
-        return "";
+
+        return toBinary(decimalSum);
     };
      public static int toDecimal(String a){
          char[] aChar = a.toCharArray();
