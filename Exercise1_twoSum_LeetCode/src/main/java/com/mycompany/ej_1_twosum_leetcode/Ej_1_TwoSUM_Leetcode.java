@@ -1,5 +1,5 @@
 package com.mycompany.ej_1_twosum_leetcode;
-import java.util.Arrays; //Biblioteca para poder imprimir los valores del array
+import java.util.Arrays; //Library to be able to print the values ​​of the array
 /**
  *
  * @author franklin
@@ -16,14 +16,14 @@ public class Ej_1_TwoSUM_Leetcode {
          int[] arr = new int[2];
          
          for (int i = 0; i < nums.length; i++) {
-             for (int j = (i+1); j < nums.length; j++){//Comparación con fuerza bruta
+             for (int j = (i+1); j < nums.length; j++){// Comparison with brute force
                  if(nums[i] + nums[j] == target){
                       arr[0] = i;
                       arr[1] = j;
-                      return arr;//retorna el array en caso cumpla los requisitos
+                      return arr;//returns the array if it meets the requirements
                  }
              }
          }
-         return null;//retorna null en caso no cumpla los requisitos
+         return null;//returns null if it does not meet the requirements
     }
 };

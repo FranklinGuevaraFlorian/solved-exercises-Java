@@ -31,11 +31,11 @@ public class Exercise67_AddBinary_LeetCode {
       return decimalNumber;  
      };
      public static String toBinary(int b){//Convert decimal sum to binary
-         double div = b;
+         double quotient = b;
          String cociente = "";
-         while(div >= 1){
-             cociente +=  (int)(div%2);
-             div = (int)(div/2);
+         while(quotient >= 1){
+             cociente +=  (int)(quotient % 2);
+             quotient = (int)(quotient/2);
          }
          return reverse(cociente);
      };
